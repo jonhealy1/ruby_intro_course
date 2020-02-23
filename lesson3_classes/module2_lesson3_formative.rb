@@ -1,7 +1,7 @@
 class Person
     #have a first_name and last_name attribute with public accessors
     #attr_accessor 
-        attr_accessor :first_name, :last_name
+    attr_accessor :first_name, :last_name
 
     #have a class attribute called `people` that holds an array of objects
     @@people = []

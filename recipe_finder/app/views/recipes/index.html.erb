@@ -1,0 +1,19 @@
+<h1>Recipes#index</h1>
+
+<h1>Recipes for - <%= @search_term %></h1>
+
+<table border="1">
+    <tr>
+        <th>Photo</th>
+        <th>Title</th>
+        <th>Ingredients</th>
+    <tr/>
+    <% @recipes.each do |recipe| %>
+        <tr>
+        <td><%= image_tag recipe["thumbnail"], size: "100x50", class: "flag" %></td>
+        <td><%= recipe["title"] %></td>
+        <td><%= recipe["ingredients"] %></td>
+        </tr>
+    <% end %>
+   
+</table>

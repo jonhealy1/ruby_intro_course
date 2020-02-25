@@ -16,6 +16,8 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+
 RSpec.configure do |config|
 
   config.before { allow($stdout).to receive(:puts) }

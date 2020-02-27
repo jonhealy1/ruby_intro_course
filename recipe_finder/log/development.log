@@ -6788,3 +6788,53 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 624ms (Views: 167.0ms | ActiveRecord: 0.0ms | Allocations: 7417)
 
 
+Started GET "/" for ::1 at 2020-02-26 22:37:17 -0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 126.9ms | Allocations: 1585)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 660ms (Views: 255.5ms | ActiveRecord: 0.0ms | Allocations: 6403)
+
+
+Started GET "/" for ::1 at 2020-02-26 22:37:29 -0800
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 44.2ms | Allocations: 1584)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 802ms (Views: 579.9ms | ActiveRecord: 0.0ms | Allocations: 13423)
+
+
+Started GET "/" for ::1 at 2020-02-26 22:38:13 -0800
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 52.9ms | Allocations: 1584)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 572ms (Views: 312.5ms | ActiveRecord: 0.0ms | Allocations: 13390)
+
+
+Started GET "/" for ::1 at 2020-02-26 22:38:21 -0800
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 43.0ms | Allocations: 1584)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 302ms (Views: 77.2ms | ActiveRecord: 0.0ms | Allocations: 6384)
+
+
+Started GET "/" for ::1 at 2020-02-26 22:40:22 -0800
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 84.3ms | Allocations: 1869)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 369ms (Views: 151.4ms | ActiveRecord: 0.0ms | Allocations: 7562)
+
+
+Started GET "/" for ::1 at 2020-02-26 22:43:26 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 31.1ms | Allocations: 1653)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 381ms (Views: 80.1ms | ActiveRecord: 0.0ms | Allocations: 6710)
+
+

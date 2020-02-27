@@ -6779,3 +6779,12 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 227ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 6308)
 
 
+Started GET "/recipes/index" for ::1 at 2020-02-26 18:44:33 -0800
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 55.1ms | Allocations: 1787)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 624ms (Views: 167.0ms | ActiveRecord: 0.0ms | Allocations: 7417)
+
+

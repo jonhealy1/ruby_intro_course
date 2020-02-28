@@ -6838,3 +6838,106 @@ Processing by RecipesController#index as HTML
 Completed 200 OK in 381ms (Views: 80.1ms | ActiveRecord: 0.0ms | Allocations: 6710)
 
 
+Started GET "/recipes/index" for ::1 at 2020-02-26 23:54:39 -0800
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 324.6ms | Allocations: 1651)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 774ms (Views: 428.5ms | ActiveRecord: 0.0ms | Allocations: 6389)
+
+
+Started GET "/" for ::1 at 2020-02-27 11:45:32 -0800
+  [1m[35m (15.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 180.4ms | Allocations: 1649)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 970ms (Views: 371.5ms | ActiveRecord: 0.0ms | Allocations: 6439)
+
+
+Started GET "/" for ::1 at 2020-02-27 22:16:52 -0800
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 20.5ms | Allocations: 3924)
+Completed 500 Internal Server Error in 381ms (ActiveRecord: 0.0ms | Allocations: 7001)
+
+
+Started GET "/" for ::1 at 2020-02-27 22:17:16 -0800
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 1907)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 366ms (Views: 119.8ms | ActiveRecord: 0.0ms | Allocations: 12751)
+
+
+Started GET "/" for ::1 at 2020-02-27 22:17:39 -0800
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1141)
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 0.0ms | Allocations: 3298)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Recipes for <%=@search_term%></h1>
+
+<% if @recipes.nil? %>
+
+<p>No recipes matching query</p>
+
+<% else %>
+
+<table border="1">
+    <tr>
+        <th>Photo</th>
+        <th>Title</th>
+        <th>Ingredients</th>
+    <tr/>
+    <% @recipes.each do |recipe| %>
+        <tr class=<%= cycle('even', 'odd') %>>
+        <td><%= link_to(image_tag(recipe["thumbnail"], size: "100x50"), recipe['href']) %></td>
+        <td><%= link_to(sanitize(recipe["title"]), recipe['href']) %></td>
+        <td><%= recipe["ingredients"] %></td>
+        </tr>
+    <% end %> 
+</table>
+
+):
+1:    <h1>Recipes for <%=@search_term%></h1>
+2:    
+3:    <% if @recipes.nil? %>
+4:    
+5:    <p>No recipes matching query</p>
+6:    
+7:    <% else %>
+8:    
+9:    <table border="1">
+10:        <tr>
+11:            <th>Photo</th>
+12:            <th>Title</th>
+13:            <th>Ingredients</th>
+14:        <tr/>
+15:        <% @recipes.each do |recipe| %>
+16:            <tr class=<%= cycle('even', 'odd') %>>
+17:            <td><%= link_to(image_tag(recipe["thumbnail"], size: "100x50"), recipe['href']) %></td>
+18:            <td><%= link_to(sanitize(recipe["title"]), recipe['href']) %></td>
+19:            <td><%= recipe["ingredients"] %></td>
+20:            </tr>
+21:        <% end %> 
+22:    </table>
+  
+app/views/recipes/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/recipes/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/recipes/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/recipes/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/recipes/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+app/views/recipes/index.html.erb:25: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2020-02-27 22:18:29 -0800
+Processing by RecipesController#index as HTML
+  Rendering recipes/index.html.erb within layouts/application
+  Rendered recipes/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1918)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 288ms (Views: 29.5ms | ActiveRecord: 0.0ms | Allocations: 7685)
+
+
